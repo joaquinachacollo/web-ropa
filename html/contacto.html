@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="logo">TAVERNITI</h1>
+        <button id="abrir" class="menu"><i class="bi bi-list"></i></button>
+        <nav id="nav">
+          <button id="cerrar" class="cerrar-menu">
+            <i class="bi bi-x"></i>
+          </button>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="container-contacto">
+        <h3>Contacto</h3>
+        <div class="formulario">
+          <form action="gracias.html">
+            <div class="estilo_form">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" required name="nombre" type="text" />
+            </div>
+            <div class="estilo_form">
+              <label for="apellido">Apellido</label>
+              <input id="apellido" name="apellido" type="text" />
+            </div>
+            <div class="estilo_form">
+              <label for="email">Email</label>
+              <input id="email" required name="email" type="email" />
+            </div>
+            <div class="estilo_form">
+              <label for="nacimiento">Fecha de nacimiento</label>
+              <input id="nacimiento" name="nacimiento" type="datetime-local" />
+            </div>
+            <div class="estilo_form">
+              <label for="motivo">Motivo</label>
+              <select id="motivo" name="motivo">
+                <option value="comprar">Comprar</option>
+                <option value="trabajo">Trabajo</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="estilo_form">
+              <label for="sexo">Sexo</label>
+              <select id="sexo" name="motivo">
+                <option value="masculino">Masculino</option>
+                <option value="femenino">Femenino</option>
+              </select>
+            </div>
+            <div class="estilo_form">
+              <label for="cv">Curriculum</label>
+              <input id="cv" name="cv" type="file" />
+            </div>
+            <div class="comentarios">
+              <div class="block">
+                <label class="comen" for="comentarios">Comentarios</label>
+                <textarea
+                  name="comentarios"
+                  id="comentarios"
+                  cols="46"
+                  rows="10"
+                ></textarea>
+              </div>
+            </div>
+            <input class="block boton" value="Enviar" type="submit" />
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer class="contacto-footer">
+      <p>
+        <span class="rojo">TAVERNITI</span> © 2023. Todos los derechos
+        reservados. -
+        <span class="azul">Términos y Condiciones</span>
+      </p>
+    </footer>
+    <script src="../script.js"></script>
+  </body>
+</html>
